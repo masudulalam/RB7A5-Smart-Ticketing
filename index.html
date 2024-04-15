@@ -143,7 +143,7 @@
                     <h6 class="text-lg font-medium">H</h6>
                     <h6 class="text-lg font-medium">I</h6>
                     <h6 class="text-lg font-medium">J</h6>
-                    <h6 class="text-lg font-medium bg-[#F7F8F8] px-10 py-4 rounded-xl">A1</h6>
+                    <h6 id="a1" onclick="addBackgroundColor()" class="text-lg font-medium bg-[#F7F8F8] px-10 py-4 rounded-xl">A1</h6>
                     <h6 class="text-lg font-medium bg-[#F7F8F8] px-10 py-4 rounded-xl">B1</h6>
                     <h6 class="text-lg font-medium bg-[#F7F8F8] px-10 py-4 rounded-xl">C1</h6>
                     <h6 class="text-lg font-medium bg-[#F7F8F8] px-10 py-4 rounded-xl">D1</h6>
@@ -190,7 +190,7 @@
                 <hr>
                 <div class="bg-[#F7F8F8] rounded-2xl p-8 mt-6">
                     <div class="text-base font-medium flex justify-between pb-4">
-                        <p>Seat</p>
+                        <p>Seat <span id="seat-numbers" class="bg-[#1DD100] text-white px-3 rounded-lg">0</span></p>
                         <p>Class</p>
                         <p>Price</p>
                     </div>
@@ -218,6 +218,7 @@
     <footer>
 
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
