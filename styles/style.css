@@ -12,3 +12,8 @@
     font-family: "Inter", sans-serif;
 }
 
+#ticket-info-div {
+    display: flex;
+    justify-content: space-between;
+}
+
