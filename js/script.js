@@ -1,22 +1,21 @@
-function previousValue() {
-    const element = document.getElementById('seat-numbers');
-    const elementTextValue = element.innerText;
-    const previousValue = parseInt(elementTextValue);
-    // console.log(typeof previousValue, previousValue);
-    return previousValue;
-}
+// function previousValue() {
+//     const element = document.getElementById('seat-numbers');
+//     const elementTextValue = element.innerText;
+//     const previousValue = parseInt(elementTextValue);
+//     // console.log(typeof previousValue, previousValue);
+//     return previousValue;
+// }
+// // get seat count numbers
+// function presentValue() {
+//     const currentNumbersOfSeat = previousValue() + 1;
+//     // console.log(currentNumbersOfSeat);
+//     return currentNumbersOfSeat;
+// }
+// // set seat count numbers update
+// function setUpdateValue() {
+//     document.getElementById('seat-numbers').innerText = presentValue();
+// }
 
-// get seat count numbers
-function presentValue() {
-    const currentNumbersOfSeat = previousValue() + 1;
-    // console.log(currentNumbersOfSeat);
-    return currentNumbersOfSeat;
-}
-
-// set seat count numbers update
-function setUpdateValue() {
-    document.getElementById('seat-numbers').innerText = presentValue();
-}
 
 // get inner text
 function getInnerTextById() {
@@ -24,6 +23,23 @@ function getInnerTextById() {
     const text = element.innerText;
     return text;
 }
+
+// get all seat-button
+const allSeatBtn = document.getElementsByClassName('seat-btn');
+let count = 0;
+for (const button of allSeatBtn) {
+    button.addEventListener('click', function(){
+        // seat count dynamically
+        count = count + 1;
+        setInnerText ('seat-numbers', count);
+        
+    })
+} 
+
+function setInnerText  (id, value) {
+    document.getElementById(id).innerText = value;
+}
+
 
 function addDynamicEvent(event) {
     function changeColor(element) {
