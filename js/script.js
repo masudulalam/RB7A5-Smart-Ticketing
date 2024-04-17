@@ -26,16 +26,27 @@ function getInnerTextById() {
 
 // get all seat-button
 const allSeatBtn = document.getElementsByClassName('seat-btn');
+// for seat count initial value
 let count = 0;
+let seatLeft = 40;
 for (const button of allSeatBtn) {
-    button.addEventListener('click', function(){
-        // seat count dynamically
+    // add click event all seat-button
+    button.addEventListener('click', function(event){
+        // seat count increases 1 by every click event
         count = count + 1;
+        // set seat-count numbers by calling function
         setInnerText ('seat-numbers', count);
+
+        // seat-left decreases 1 by every click event
+        seatLeft = seatLeft - 1;
+        // set seat-left numbers by calling function
+        setInnerText ('total-seats', seatLeft);
         
+        // const seatNumber = event.target.parentNode.childNodes[21].innerText; 
+        // console.log(event.target.parentNode.childNodes);
     })
 } 
-
+// for set inner-text by given id & value
 function setInnerText  (id, value) {
     document.getElementById(id).innerText = value;
 }
