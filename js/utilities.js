@@ -1,3 +1,12 @@
+const allSeatBtn = document.getElementsByClassName('seat-btn');
+let count = 0;
+for (const button of allSeatBtn) {
+    button.addEventListener('click', function(){
+        count = count + 1;
+        document.getElementById('seat-numbers').innerText = count;
+    })
+} 
+
 // Remove background color by element id
 function removeBackgroundColorById (elementId) {
     const element = document.getElementById(elementId);
