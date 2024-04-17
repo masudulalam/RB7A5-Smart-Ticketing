@@ -57,12 +57,17 @@ for (const button of allSeatBtn) {
         div.appendChild(paragraphOne);
         div.appendChild(paragraphTwo);
         div.appendChild(paragraphThree);
-        div.setAttribute('id','ticket-info-div')
+        div.setAttribute('id', 'ticket-info-div')
         document.getElementById('ticket-info').appendChild(div);
-        
-        
+
+        // set Total Price
+        setTotalPrice();
+        // set Grand Total
+        setGrandTotal();
+
     })
 }
+
 // for set inner-text by given id & value
 function setInnerText(id, value) {
     document.getElementById(id).innerText = value;
@@ -71,7 +76,7 @@ function setInnerText(id, value) {
 
 
 
-
+// ---------------------------------------------------------------
 function addDynamicEvent(event) {
     function changeColor(element) {
         element.style.backgroundColor = '#1DD100';
@@ -117,3 +122,4 @@ function addDynamicEvent(event) {
     // set Grand Total
     setGrandTotal();
 }
+// ---------------------------------------------------------------
