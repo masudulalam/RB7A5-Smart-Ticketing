@@ -1,3 +1,11 @@
+// previous total price
+function previousTotalPrice () {
+    const element = document.getElementById('total-price');
+    const textValue = element.innerText;
+    const numValue = parseInt(textValue);
+    return numValue;
+}
+
 // set present total price
 function setTotalPrice () {
     const previousTotal = previousTotalPrice();
