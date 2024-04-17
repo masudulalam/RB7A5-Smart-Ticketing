@@ -10,21 +10,22 @@ function setBackgroundColorById (elementId) {
     element.classList.add('bg-[#1DD100]', 'text-white');
 }
 
-// get seat left numbers 
-function getSeatLeftValue () {
-    const element = document.getElementById('total-seats');
-    const elementTextValue = element.innerText;
-    // console.log(typeof elementTextValue, elementTextValue);
-    const value = parseInt(elementTextValue);
-    // console.log(typeof value, value);
-    return value;
-}
-// set seat-left numbers 
-function setSeatLeftValue () {
-    const element = document.getElementById('total-seats');
-    element.innerText = getSeatLeftValue () - 1;
-    // console.log(element);
-}
+// // get seat left numbers 
+// function getSeatLeftValue () {
+//     const element = document.getElementById('total-seats');
+//     const elementTextValue = element.innerText;
+//     // console.log(typeof elementTextValue, elementTextValue);
+//     const value = parseInt(elementTextValue);
+//     // console.log(typeof value, value);
+//     return value;
+// }
+
+// // set seat-left numbers 
+// function setSeatLeftValue () {
+//     const element = document.getElementById('total-seats');
+//     element.innerText = getSeatLeftValue () - 1;
+//     // console.log(element);
+// }
 
 // previous total price
 function previousTotalPrice () {

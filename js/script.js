@@ -90,9 +90,9 @@ function addDynamicEvent(event) {
     }
 
     // remove background color
-    // removeBackgroundColorById();
+    removeBackgroundColorById();
     // set background color
-    // setBackgroundColorById();
+    setBackgroundColorById();
 
     // set seat count numbers update
     setUpdateValue();
